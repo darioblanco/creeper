@@ -1,0 +1,4 @@
+argparse
+Ghost.py
+PyQt
+SIP

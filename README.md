@@ -2,3 +2,33 @@ creeper
 =======
 
 Play with ghost.py, and creep the web servers.
+
+## Dependencies
+Python 2.6 or greater
+
+Ubuntu packages
+* python-qt4
+* qt4-dev-tools
+
+Pip packages
+* argparse
+* Ghost.py
+* PyQt
+* SIP
+
+Just create a virtualenv and install the pip packages with `pip install -r requirements.txt`.
+
+`PyQt` and `SIP` will fail to install (`Ghost.py` needs them), it is expected so extra steps have to be done.
+Go to the place in which pip has downloaded `SIP` and `PyQt` packages and execute the following commands (the Ubuntu package dependencies are needed for `PyQt`):
+
+> cd ~/build/SIP
+python configure.py
+make
+sudo make install 
+
+> cd ~/build/PyQt
+python configure.py
+make
+sudo make install
+
+Be patient, it takes a while. Being a creeper is not an easy business.
