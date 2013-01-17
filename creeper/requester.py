@@ -36,3 +36,6 @@ def valid_url(url):
 if __name__ == "__main__":
     arg_dict = parse_arguments()
     ghost = Ghost()
+    print "Requesting '{0}'".format(arg_dict['url'])
+    page, resources = ghost.open(arg_dict['url'])
+    print ghost.content
