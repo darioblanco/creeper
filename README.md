@@ -20,14 +20,22 @@ Just create a virtualenv and install the pip packages with `pip install -r requi
 
 `Ghost.py` needs `PyQt`. For installing it, run `pip install -r pyqt-requirements.txt`. `PyQt` and `SIP` will fail to install, which is expected because the source is downloaded but pip can't install it (yeah I hate that). But don't worry, there is a workaround: go to the place in which pip has downloaded `SIP` and `PyQt` packages and execute the following commands (the Ubuntu package dependencies are needed for `PyQt`):
 
+For `SIP`
 > cd ~/build/SIP
-python configure.py
-make
-sudo make install 
+>
+> python configure.py
+>
+> make
+>
+> sudo make install 
 
+For `PyQt`
 > cd ~/build/PyQt
-python configure.py
-make
-sudo make install
+>
+> python configure.py
+>
+> make
+>
+> sudo make install
 
 Be patient, it takes a while (compiling `PyQt` is funny). You should remind that being a creeper is not an easy business.
