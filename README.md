@@ -18,7 +18,7 @@ Pip packages
 
 Just create a virtualenv and install the pip packages with `pip install -r requirements.txt`.
 
-`PyQt` and `SIP` will fail to install (`Ghost.py` needs them), it is expected so extra steps have to be done.
+`Ghost.py` needs `PyQt`. For installing it, run `pip install -r pyqt-requirements.txt`. `PyQt` and `SIP` will fail to install, which is expected because the source is downloaded but pip can't install it.
 Go to the place in which pip has downloaded `SIP` and `PyQt` packages and execute the following commands (the Ubuntu package dependencies are needed for `PyQt`):
 
 > cd ~/build/SIP
