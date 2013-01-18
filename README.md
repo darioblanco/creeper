@@ -3,6 +3,9 @@ creeper
 
 Play with `ghost.py`, and creep the web servers. This project is just a basic set up of `Ghost.py`, with an example script. Check the [Ghost.py documentation](http://carrerasrodrigo.github.com/Ghost.py/) for further information.
 
+![Creeper](http://media-mcw.cursecdn.com/thumb/0/0a/Creeper.png/150px-Creeper.png)
+
+
 ## Dependencies
 Python 2.6 or greater
 
